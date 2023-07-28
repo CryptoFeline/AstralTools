@@ -1,0 +1,24 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 40" width="400" height="40">
+	<title>astral-logo-horizontal-svg</title>
+	<defs>
+		<image width="41" height="40" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAoCAMAAABU4iNhAAAAAXNSR0IB2cksfwAAAN5QTFRFAAAAHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeW4vJHqgAAAEp0Uk5TABxAGBVYnNz/2KuCJ1PNtkUqvr8lDo379VI92v53EtaLARbRjwWY7iEo/LC4ODGooPoKaFDbAxnwX6w1s/IbYIx0T8K0SMyVTAuO8CvwAAAA7ElEQVR4nI3U2U7CUBSF4YW0shkFxVK0UAQUQZRZZFBQUeT9X8g2jUgnuv7Lky852TcL8BY7sYv73t0p6mlCnJKpdCbUZXPi7iwf6Arn4u+i6HOXWikAiuhlD7y6DnRWRsUFq2YYtKrd/MN64wgUae7hrfdmb+qfvIuA0rp3YLsTJeXBkd1IKPJowyeDkD1b9gkogzow1BkpI2BMQfv7Gicn3OVWnWdMOClTvJCyDRJKkZYxWoKVJi37tJzRUmHlHKxcsHIJUr6+sXIFUmog5RqkfAcn9Q9w8vNgwY+5zdfhdIag1vf2Z+dbbq5f6qIzw+mEsdkAAAAASUVORK5CYII="/>
+		<image width="31" height="29" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAdCAMAAABluEcAAAAAAXNSR0IB2cksfwAAANhQTFRFAAAAAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gAP/gIR0+5gAAAEh0Uk5TAA9VnMfh9/zp1LJeDQeG+P+gJ0Lc/ahb+eAvA4n2V18eRPrNCrBgLd4IiFjYJOsBQCA4aVNUGf7AZudlBMMU2g5k7ROLg69IlHX1nAAAALxJREFUeJyF0tUWglAQRuHfFnPsbkWxMbFb3/+NxMIFwrhvvzNnbgb4ZLM7nC63xyv4/AH8FAyFScsdiRo4FiddiaTuRSpNxjJZTXP5H1UrFD9eMmMib/nFlaq5U63+9IYFE4kPbloytSTV29ZOHdW7jEeAHsPUH2DIOckQWR9hzPoEU9bFP/tFzOaclwCFn8fij0tL3rHi92O94R3bHfs/UBZ4x97qht6OweHIOnA6mx3K19Xk6eWq6LvdAYgqOg0zuq+cAAAAAElFTkSuQmCC"/>
+		<image width="14" height="25" id="img3" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAZCAMAAAA2Re/AAAAAAXNSR0IB2cksfwAAAKVQTFRFAAAAHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWHaeWJld1rQAAADd0Uk5TADIZJ397KBt8gDNUPRYhRHYHbEgSfiBQMH01Ky1NImcJegFkDDQUBT8NXwMKbhBzYyw6dAgEU5zQLUwAAACaSURBVHicVdDpEoIwDATgVYsabxEvPFA8EfDW938029KSuv++yWQmWUCmUoWTmvDqrEaTSLRKtkmlY9TVItEr2C9Ig6Gmb0gjpcCKxoHkpCRNJWfMudwOmbQAlg5XwNphBGwEcxsDO2e8Bw4Oj8DJ+yPOzEQyvliJVJ2d5YZ+8eP1xkerJHfNhy0ofb7kC28u8BPmX7dexBnwAxCiDWwleeGgAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 24px;fill: #000000;font-weight: 700;font-family: "BabaPro-Bold", "BabaPro" } 
+		.t1 { font-size: 24px;fill: #000000;font-weight: 400;font-family: "BabaPro", "BabaPro" } 
+	</style>
+	<text id="ASTRAL" style="transform: matrix(1.509,0,0,1.509,63,6)" >
+		<tspan x="0" y="16.9" class="t0">A</tspan><tspan  y="16.9" class="t0">S</tspan><tspan  y="16.9" class="t0">T</tspan><tspan  y="16.9" class="t0">R</tspan><tspan  y="16.9" class="t0">A</tspan><tspan  y="16.9" class="t0">L</tspan><tspan  y="16.9" class="t1">
+</tspan>
+	</text>
+	<text id="TOOLS" style="transform: matrix(1.613,0,0,1.613,245,6.345)" >
+		<tspan x="0" y="15.8" class="t1">T</tspan><tspan  y="15.8" class="t1">O</tspan><tspan  y="15.8" class="t1">O</tspan><tspan  y="15.8" class="t1">L</tspan><tspan  y="15.8" class="t1">S
+</tspan>
+	</text>
+	<use id="img2" href="#img1" transform="matrix(1.052,0,0,1.052,0,-0.069)"/>
+	<use id="img3" href="#img2" transform="matrix(1.052,0,0,1.052,28.397,-0.069)"/>
+	<use id="img4" href="#img3" transform="matrix(1.052,0,0,1.052,28.397,4.138)"/>
+</svg>
