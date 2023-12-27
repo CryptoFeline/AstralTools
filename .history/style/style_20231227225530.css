@@ -909,6 +909,7 @@ textarea.w-select {
     text-align: center;
     line-height: 100px;
     background-color: #f9f9f9;
+    border-radius: 5%;
     margin: 0 10px;
   }
   
