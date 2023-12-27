@@ -39,8 +39,8 @@ function updateDashboard(balance) {
 // Define this function if it wasn't defined previously
 function generateDummyLineChartData() {
     return {
-        labels: ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar'], // Example labels
-        values: [20, 20, 22, 25, 0, 0, 0,] // Example data points
+        labels: ['January', 'February', 'March', 'April'], // Example labels
+        values: [20, 30, 45, 60] // Example data points
     };
 }
 
