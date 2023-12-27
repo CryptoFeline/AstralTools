@@ -1,55 +1,51 @@
-// dashboard.js
-
-// Function to update the dashboard
 function updateDashboard(balance) {
-    // Convert balance to a number or use it directly if it's already a number
     const tokenBalance = Number(balance);
 
     // Calculate other dashboard values based on the token balance
-    const shareholdPercent = calculateShareholdPercent(tokenBalance);
     const currentEarnings = calculateCurrentEarnings(tokenBalance);
     const projectedApr = calculateProjectedApr(tokenBalance);
     const hedgeCapital = 25000; // Hardcoded hedge capital
-    const profitabilityPercent = calculateProfitability(hedgeCapital);
-    const cumulativeGrowth = calculateCumulativeGrowth(hedgeCapital);
+    const totalTokens = 471031694; // Hardcoded total tokens
 
-    // Update the dashboard elements
-    document.getElementById('shareholdPercent').innerText = shareholdPercent.toFixed(2) + '%';
-    document.getElementById('currentEarnings').innerText = `$${currentEarnings.toFixed(2)}`;
-    document.getElementById('projectedApr').innerText = projectedApr.toFixed(2) + '%';
-    document.getElementById('hedgeCapital').innerText = `$${hedgeCapital}`;
-    document.getElementById('profitabilityPercent').innerText = profitabilityPercent.toFixed(2) + '%';
-    document.getElementById('cumulativeGrowth').innerText = cumulativeGrowth.toFixed(2) + '%';
+    // Calculate the sharehold percent
+    const shareholdPercent = (balance / totalTokens) * 100;
 
-    // Render charts
+    // Update the HTML elements with the new data
+    document.getElementById('shareholdPercent').textContent = shareholdPercent.toFixed(2) + '%';
+    document.getElementById('currentEarnings').textContent = `$${calculateEarnings(balance, hedgeCapital).toFixed(2)}`;
+    document.getElementById('projectedApr').textContent = `${calculateProjectedAPR().toFixed(2)}%`;
+    document.getElementById('hedgeCapital').textContent = `$${hedgeCapital}`;
+    document.getElementById('profitabilityPercent').textContent = `${calculateProfitability(hedgeCapital).toFixed(2)}%`;
+    document.getElementById('cumulativeGrowth').textContent = `${calculateCumulativeGrowth(hedgeCapital).toFixed(2)}%`;
+
+    // Render the charts
     renderDonutChart(shareholdPercent);
-    renderLineChart(generateDummyLineChartData()); // Replace with real data
+    renderLineChart(calculateCumulativeGrowthData(hedgeCapital)); // Placeholder for cumulative growth data
 }
 
-// Example calculation functions
-function calculateShareholdPercent(tokenBalance) {
-    const totalTokens = 471031694; // Total tokens in the hedge
-    return (tokenBalance / totalTokens) * 100;
+function calculateEarnings(balance, hedgeCapital) {
+    // Placeholder for calculating earnings based on balance and hedge capital
+    return (balance / totalTokens) * hedgeCapital; // Simplistic calculation
 }
 
-function calculateCurrentEarnings(tokenBalance) {
-    // Placeholder for actual earnings calculation
-    return tokenBalance * 0.1; // Example calculation
-}
-
-function calculateProjectedApr(tokenBalance) {
-    // Placeholder for actual APR calculation
-    return 10; // Example fixed APR
+function calculateProjectedAPR() {
+    // Placeholder for calculating projected APR
+    return 10; // Hardcoded for example
 }
 
 function calculateProfitability(hedgeCapital) {
-    // Placeholder for profitability calculation
+    // Placeholder for calculating profitability percent
     return hedgeCapital * 0.05; // 5% profitability for example
 }
 
 function calculateCumulativeGrowth(hedgeCapital) {
-    // Placeholder for cumulative growth calculation
+    // Placeholder for calculating cumulative growth
     return hedgeCapital * 0.1; // 10% cumulative growth for example
+}
+
+function calculateCumulativeGrowthData(hedgeCapital) {
+    // Placeholder for generating cumulative growth data
+    return [/* ...some data based on hedgeCapital... */];
 }
 
 function renderDonutChart(shareholdPercent) {
