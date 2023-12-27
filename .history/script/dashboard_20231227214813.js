@@ -22,7 +22,7 @@ function updateDashboard(balance) {
 
     // Use the adjusted balance for calculations
     const shareholdPercent = calculateShareholdPercent(adjustedBalance);
-    const currentEarnings = calculateCurrentEarnings(userTokenBalance);
+    const currentEarnings = calculateCurrentEarnings(adjustedBalance);
     const projectedApr = calculateProjectedApr(adjustedBalance);
     const hedgeCapital = 25000; // Hardcoded hedge capital
     const profitabilityPercent = calculateProfitability(hedgeCapital);
