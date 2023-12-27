@@ -89,7 +89,7 @@ function renderDonutChart(shareholdPercent) {
             backgroundColor: ['#00ffe0', '#e0e0e0'],
         }],
         labels: [
-            'Your Share',
+            'Your Sharehold',
             'Others',
         ]
     };

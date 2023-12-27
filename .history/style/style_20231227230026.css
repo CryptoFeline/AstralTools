@@ -908,7 +908,7 @@ textarea.w-select {
     height: 100%;
     text-align: center;
     line-height: 100px;
-    background-color: transparent;
+    background-color: #f9f9f9;
   }
   
   /* Add media queries for responsiveness */
