@@ -4,13 +4,26 @@ let lineChartInstance = null;
 
 // Function to update the dashboard
 function updateDashboard(balance) {
+    // Log the balance value for debugging
+    console.log("Original balance value:", balance);
+
     // Convert balance to a number or use it directly if it's already a number
     const tokenBalance = Number(balance);
 
-    // Calculate other dashboard values based on the token balance
-    const shareholdPercent = calculateShareholdPercent(tokenBalance);
-    const currentEarnings = calculateCurrentEarnings(tokenBalance);
-    const projectedApr = calculateProjectedApr(tokenBalance);
+    // Define the number of decimals to remove based on your token's smallest unit.
+    // For Ethereum's wei to ether conversion, this would be 18.
+    const decimalsToRemove = 18; // Adjust this value to match your token's decimal places
+
+    // Assuming the token balance is in a smaller unit, convert it to the main unit by removing the excess decimals.
+    const adjustedBalance = tokenBalance / Math.pow(10, decimalsToRemove);
+
+    // Log the adjusted balance for debugging
+    console.log("Adjusted token balance:", adjustedBalance);
+
+    // Use the adjusted balance for calculations
+    const shareholdPercent = calculateShareholdPercent(adjustedBalance);
+    const currentEarnings = calculateCurrentEarnings(adjustedBalance);
+    const projectedApr = calculateProjectedApr(adjustedBalance);
     const hedgeCapital = 25000; // Hardcoded hedge capital
     const profitabilityPercent = calculateProfitability(hedgeCapital);
     const cumulativeGrowth = calculateCumulativeGrowth(hedgeCapital);
@@ -44,16 +57,16 @@ function generateDummyLineChartData() {
     };
 }
 
-function calculateShareholdPercent(tokenBalance) {
-    const totalTokens = 471031694; // Verify this is correct
-    // Make sure tokenBalance is not in wei or another denomination
-    return (tokenBalance / totalTokens) * 100;
+function calculateShareholdPercent(adjustedBalance) {
+    // Use adjustedBalance in your calculation
+    const totalTokens = 471031694; // Verify this is the correct total supply
+    return (adjustedBalance / totalTokens) * 100;
 }
 
 function calculateCurrentEarnings(tokenBalance) {
     // Adjust this calculation as necessary
     // Make sure tokenBalance is correct and the multiplier is realistic
-    return tokenBalance * 0.1; // Example: This could be an APR calculation based on tokenBalance
+    return adjustedBalance * 0.1; // Example: This could be an APR calculation based on tokenBalance
 }
 
 function calculateProjectedApr(tokenBalance) {
