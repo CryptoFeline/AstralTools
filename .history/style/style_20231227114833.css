@@ -877,56 +877,6 @@ textarea.w-select {
     display: none !important
 }
 
-/* Dashboard Widget Styling */
-.dashboard-widget {
-    font-family: 'Arial', sans-serif;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background: white;
-  }
-  
-  .dashboard-widget h2 {
-    color: #333;
-    text-align: center;
-  }
-  
-  .wallet-info, .earnings-info, .capital-info {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .charts {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0;
-  }
-  
-  .chart {
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    background-color: #f9f9f9;
-    border-radius: 50%;
-    margin: 0 10px;
-  }
-  
-  /* Add media queries for responsiveness */
-  @media (max-width: 600px) {
-    .charts {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .chart {
-      margin-bottom: 15px;
-    }
-  }
-  
-
 @media screen and (max-width:991px) {
     .w-container {
         max-width: 728px
