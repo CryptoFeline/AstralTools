@@ -1,3 +1,11 @@
+// Define this function if it wasn't defined previously
+function generateDummyLineChartData() {
+    return {
+        labels: ['October', 'November', 'December'], // Example labels
+        values: [20, 22, 25,] // Example data points
+    };
+}
+
 // Store chart instances to properly destroy them before recreating
 let donutChartInstance = null;
 let lineChartInstance = null;
@@ -34,14 +42,6 @@ function updateDashboard(balance) {
     // Render charts
     renderDonutChart(shareholdPercent);
     renderLineChart(generateDummyLineChartData()); // Replace with real data
-}
-
-// Define this function if it wasn't defined previously
-function generateDummyLineChartData() {
-    return {
-        labels: ['January', 'February', 'March', 'April'], // Example labels
-        values: [20, 30, 45, 60] // Example data points
-    };
 }
 
 // Example calculation functions
@@ -103,10 +103,10 @@ function renderLineChart(data) {
     new Chart(ctx, {
         type: 'line',
         data: {
-            labels: data.labels,
+            labels: data.labels, // Array of labels (e.g., ['January', 'February', 'March'])
             datasets: [{
                 label: 'Cumulative Growth',
-                data: data.values,
+                data: data.values, // Array of data points (e.g., [20, 30, 45])
                 backgroundColor: 'rgba(78, 115, 223, 0.05)',
                 borderColor: '#4e73df',
                 borderWidth: 2,
