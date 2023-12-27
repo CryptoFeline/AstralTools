@@ -1,4 +1,3 @@
-// Define this function if it wasn't defined previously
 function generateDummyLineChartData() {
     return {
         labels: ['January', 'February', 'March', 'April'], // Example labels
@@ -30,14 +29,6 @@ function updateDashboard(balance) {
     document.getElementById('hedgeCapital').innerText = `$${hedgeCapital}`;
     document.getElementById('profitabilityPercent').innerText = profitabilityPercent.toFixed(2) + '%';
     document.getElementById('cumulativeGrowth').innerText = cumulativeGrowth.toFixed(2) + '%';
-
-    // Check and destroy previous chart instances if they exist
-    if (donutChartInstance) {
-        donutChartInstance.destroy();
-    }
-    if (lineChartInstance) {
-        lineChartInstance.destroy();
-    }
 
     // Render charts
     renderDonutChart(shareholdPercent);
@@ -83,8 +74,7 @@ function renderDonutChart(shareholdPercent) {
         ]
     };
 
-    // Create the chart instance and store it
-    donutChartInstance = new Chart(ctx, {
+    new Chart(ctx, {
         type: 'doughnut',
         data: data,
         options: {
