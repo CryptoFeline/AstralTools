@@ -64,7 +64,7 @@ function calculateShareholdPercent(tokenBalance) {
 function calculateCurrentEarnings(tokenBalance) {
     // Adjust this calculation as necessary
     // Make sure tokenBalance is correct and the multiplier is realistic
-    return adjustedBalance * 0.1; // Example: This could be an APR calculation based on tokenBalance
+    return tokenBalance * 0.1; // Example: This could be an APR calculation based on tokenBalance
 }
 
 function calculateProjectedApr(tokenBalance) {
