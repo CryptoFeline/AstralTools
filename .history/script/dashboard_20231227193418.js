@@ -55,9 +55,9 @@ function generateDummyLineChartData() {
     };
 }
 
-function calculateShareholdPercent(adjustedBalance) {
-    // Use adjustedBalance in your calculation
-    const totalTokens = 471031694; // Verify this is the correct total supply
+function calculateShareholdPercent(tokenBalance) {
+    const totalTokens = 471031694; // Verify this is correct
+    // Make sure tokenBalance is not in wei or another denomination
     return (adjustedBalance / totalTokens) * 100;
 }
 
