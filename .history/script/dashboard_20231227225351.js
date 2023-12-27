@@ -46,6 +46,15 @@ function updateDashboard(balance) {
 
     // Render charts
     renderDonutChart(shareholdPercent);
+    renderLineChart(generateDummyLineChartData()); // Replace with real data
+}
+
+// Define this function if it wasn't defined previously
+function generateDummyLineChartData() {
+    return {
+        labels: ['Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar'], // Example labels
+        values: [20, 20, 22, 25, 0, 0, 0,] // Example data points
+    };
 }
 
 function calculateShareholdPercent(adjustedBalance) {
@@ -104,6 +113,36 @@ function renderDonutChart(shareholdPercent) {
             cutoutPercentage: 80,
             legend: {
                 display: false
+            }
+        }
+    });
+}
+
+function renderLineChart(data) {
+    const ctx = document.getElementById('lineChartCanvas').getContext('2d');
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: data.labels,
+            datasets: [{
+                label: 'Cumulative Growth',
+                data: data.values,
+                backgroundColor: 'rgba(78, 115, 223, 0.05)',
+                borderColor: '#4e73df',
+                borderWidth: 2,
+                pointBackgroundColor: '#4e73df',
+                lineTension: 0.4,
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
             }
         }
     });
