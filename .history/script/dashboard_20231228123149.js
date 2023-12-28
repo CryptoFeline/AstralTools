@@ -69,12 +69,12 @@ function calculateProjectedApr(tokenBalance) {
 }
 
 function calculateProfitability(hedgeCapital) {
-    return hedgeCapital * 0.005;
+    return hedgeCapital * 0.05;
 }
 
 function calculateCumulativeGrowth(hedgeCapital) {
     // Example: Is 10% cumulative growth
-    return hedgeCapital * 0.01;
+    return hedgeCapital * 0.1;
 }
 
 // Make sure to format the numbers for display
